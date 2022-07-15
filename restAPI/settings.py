@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Apps installed
+    # Apps installed In Application
     'rest_framework',
     'backend',
     'client',
