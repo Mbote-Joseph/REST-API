@@ -4,6 +4,5 @@ from rest_framework import api_view
 
 # Create your views here.
 @api_view(['GET'])
-def index(request):
+def get(request):
     return Response({'message': 'Hello, World!'})
-    
