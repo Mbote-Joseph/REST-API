@@ -13,7 +13,7 @@
 # limitations under the License.
 
 from django.urls import URLPattern, path
-from . import views
+from client.views import views
 
 urlpatterns = [
 

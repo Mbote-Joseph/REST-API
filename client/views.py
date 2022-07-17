@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from client.models import User
 
-from . import UserSerializer
+
+from client.serializers import UserSerializer
 
 # Create your views here.
 @api_view(['GET'])
