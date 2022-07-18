@@ -16,5 +16,6 @@ from django.urls import URLPattern, path
 from . import views
 
 urlpatterns = [
-    path('get', views.getUser, name="get")
+    path('get', views.getUser, name="get"),
+    path('post', views.postUser, name="post")
 ]
