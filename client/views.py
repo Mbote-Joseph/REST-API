@@ -4,12 +4,12 @@ from rest_framework.decorators import api_view
 from client.models import User
 
 
-from client.serializers import UserSerializer
+from client.serializers import UserSerializers
 
 # Create your views here.
 @api_view(['GET'])
-def get(request):
-    users = UserSerializer.objects.all()
-    serializer = UserSerializer(users, many=True)
+def getUser(request):
+    users = UserSerializers.objects.all()
+    serializer = UserSerializers(users, many=True)
     return Response(serializer.data)
     

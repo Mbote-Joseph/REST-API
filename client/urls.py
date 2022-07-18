@@ -13,8 +13,8 @@
 # limitations under the License.
 
 from django.urls import URLPattern, path
-from client.views import views
+from . import views
 
 urlpatterns = [
-
+    path('get', views.getUser, name="get")
 ]
