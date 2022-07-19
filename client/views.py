@@ -25,3 +25,4 @@ def postUser(request):
 @api_view(['DELETE'])
 def deleteUser(request, pk):
     user = User.objects.get(pk=pk)
+    user.delete()
