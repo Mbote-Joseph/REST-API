@@ -18,5 +18,9 @@ def postUser(request):
     serializer= UserSerializers(data=request.data)
     if serializer.is_valid():
         serializer.save
-        
+
+    
+@api_view(['DELETE'])
+def deleteUser(request, pk):
+    user = User.objects.get(pk=pk)
     
