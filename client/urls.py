@@ -17,5 +17,7 @@ from . import views
 
 urlpatterns = [
     path('get', views.getUser, name="get"),
-    path('post', views.postUser, name="post")
+    path('post', views.postUser, name="post"),
+    path('put', views.putUser, name="put"),
+    path('delete', views.deleteUser, name="delete")
 ]

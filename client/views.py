@@ -26,3 +26,4 @@ def postUser(request):
 def deleteUser(request, pk):
     user = User.objects.get(pk=pk)
     user.delete()
+    
